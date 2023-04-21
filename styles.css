@@ -10,12 +10,17 @@ body {
     padding: 8px;
 }
 
+.first {
+    padding-bottom: 80px;
+}
+
 .header,
 .hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 8px 64px 16px 64px;
+    gap: 50px;
 }
 
 ul {
@@ -57,13 +62,14 @@ button {
     color: #1F2937;
     display: flex;
     justify-content: center;
-    padding: 16px;
+    margin: 16px;
 }
 
 .images {
     display: flex;
     justify-content: center;
     gap: 32px;
+    margin: 50px 150px;
 }
 
 .info {
@@ -105,6 +111,7 @@ img {
 
 .quoter {
     font-weight: 500;
+    text-align: end;
 }
 
 .fourth {
@@ -121,7 +128,7 @@ img {
     border-radius: 5px;
     background-color: #3882F6;
     color: #E5E7EB;
-    height: 150px;
+    height: 100px;
     width: 200px;
     flex: 1;
 }
