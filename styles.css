@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
 }
 
 .first, 
@@ -7,19 +12,14 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 8px;
-}
-
-.first {
-    padding-bottom: 80px;
 }
 
 .header,
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 8px 64px 16px 64px;
+    padding: 1em 10em;
     gap: 50px;
 }
 
@@ -68,6 +68,7 @@ button {
 .images {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
     margin: 50px 150px;
 }
@@ -82,9 +83,10 @@ img {
     border-radius: 10px;
     border-color: #3882F6;
     border-width: 8px; /* doesn't work? */
+    object-fit: cover;
 }
 
-.hero-img {
+.hero img {
     width: 300px;
     height: 150px;
 }
@@ -94,7 +96,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 6em 12em;
     background-color: #E5E7EB;
 }
 
@@ -112,13 +114,15 @@ img {
 .quoter {
     font-weight: 500;
     text-align: end;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .fourth {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 4em 12em;
 }
 
 .box {
@@ -128,8 +132,7 @@ img {
     border-radius: 5px;
     background-color: #3882F6;
     color: #E5E7EB;
-    height: 100px;
-    width: 200px;
+    padding: 4em;
     flex: 1;
 }
 
